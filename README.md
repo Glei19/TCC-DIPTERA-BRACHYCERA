@@ -54,7 +54,7 @@ pip install numpy
 
 * O arquivo "TCC - Fig 4 (Abund - Trilha).py gera um gráfico de abundância total de cada família encontrada na respectiva trilha, o mesmo está em escala logarítimica para facilitar a visualização. 
 
-![TCC - Fig 4 (Abund - Trilha)]([https://github.com/Glei19/TCC-DIPTERA-BRACHYCERA/assets/84149863/55a7f85f-04c6-4b18-a679-ecd8cba81fd4](https://github.com/Glei19/TCC-DIPTERA-BRACHYCERA/blob/main/Figuras/TCC%20-%20Fig%204%20(Abund%20-%20Trilha).png?raw=true))
+![TCC - Fig 4 (Abund - Trilha)](https://github.com/Glei19/TCC-DIPTERA-BRACHYCERA/assets/84149863/84a1a9cb-4386-4167-a094-187e68e8977d)
 
 
 * O arquivo "TCC - Fig 5 (Clima + Abund1).py" gera um gráfico de abundância das famílias "Anthomyiidae, Calliphoridae e Fanniidae" coletadas ao longo dos meses em comparação com as variações dos fatores climáticos.
