@@ -59,12 +59,14 @@ pip install numpy
 
 * O arquivo "TCC - Fig 5 (Clima + Abund1).py" gera um gráfico de abundância das famílias "Anthomyiidae, Calliphoridae e Fanniidae" coletadas ao longo dos meses em comparação com as variações dos fatores climáticos.
 
-![TCC - Fig 5 (Clima + Abund1)](https://github.com/Glei19/TCC-DIPTERA-BRACHYCERA/assets/84149863/f55327e8-7723-49be-8817-ea53d2083331)
+
+![TCC - Fig 5 (Clima + Abund1)](https://github.com/Glei19/TCC-DIPTERA-BRACHYCERA/assets/84149863/a87fea0f-272c-42a9-9cbb-f7d9ba501b42)
 
 
 * O arquivo "TCC - Fig 6  (Clima + Abund2 Log).py" gera um gráfico de abundância das famílias "Mesembrinellidae, Muscidae e Sarcophagidae" coletadas ao longo dos meses em comparação com as variações dos fatores climáticos, o gráfico apresenta escala logarítmica para facilitar a visualização devido à alta diferença nos valores de abundância.
 
-![TCC - Fig 6  (Clima + Abund2 Log)](https://github.com/Glei19/TCC-DIPTERA-BRACHYCERA/assets/84149863/4cb117cb-c9c1-4c87-aec6-054c1e345544)
+
+![TCC - Fig 6  (Clima + Abund2 Log)](https://github.com/Glei19/TCC-DIPTERA-BRACHYCERA/assets/84149863/c393db97-86c7-4bd9-b3f2-302d4f79fdcd)
 
 
 **Contribuições**
