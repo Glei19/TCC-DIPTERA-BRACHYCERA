@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read CSV file and sort data alphabetically by "Famílias" column
-csv_path = 'Dados Glei/Abund T.csv'
+csv_path = 'Dados Trilha + Familias\Abund T.csv'
 family_data = pd.read_csv(csv_path, encoding='ISO-8859-1').sort_values(by='Famílias')
 
 # Set index to "Famílias" column
@@ -36,7 +36,7 @@ plt.gca().yaxis.set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".form
 ax.set_xticklabels(ax.get_xticklabels(), rotation=0)
 
 # Save plot to file
-plt.savefig('TCC - Fig 3 (Abund Total).png', bbox_inches='tight', dpi=2048)
+plt.savefig('TCC - Fig 3 (Abund Total).png', bbox_inches='tight', dpi=256)
 
 # Show plot
 plt.show()

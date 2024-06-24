@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import ScalarFormatter
 
 # Leitura dos dados do primeiro CSV
-df_clima = pd.read_csv('Dados.csv')
+df_clima = pd.read_csv('Dados Trilha + Familias\Dados.csv')
 
 # Transposição do DataFrame para facilitar o plot
 df_clima_t = df_clima.transpose()
@@ -12,7 +12,7 @@ df_clima_t = df_clima_t[1:]
 df_clima_t = df_clima_t.astype(float)
 
 # Leitura dos dados do segundo CSV
-csv_path = 'Dados Glei\Abund2.csv'
+csv_path = 'Dados Trilha + Familias\Abund2.csv'
 data_abundancia = pd.read_csv(csv_path, encoding='ISO-8859-1')
 df_abundancia = pd.DataFrame(data_abundancia)
 df_abundancia.set_index('name-id', inplace=True)
@@ -58,8 +58,16 @@ for coluna, cor in zip(df_clima_t.columns, cores_linhas):
     elif coluna == 'umidade':
         ax1.plot(df_clima_t.index, df_clima_t[coluna], label='Umidade (%)', color=cor)
 
+ax1.set_yscale('log')
+# Formatando os rótulos do eixo y para exibir números absolutos
+ax1.yaxis.set_major_formatter(ScalarFormatter())
+
+yticks = [20, 30, 100, 200, 400]
+plt.yticks(yticks)
+plt.ylim(15, 500)
+
 # Adicionando título e rótulos aos eixos do primeiro subplot
-ax1.set_ylabel('Valores Climáticos')
+ax1.set_ylabel('Valores Climáticos (Log)', fontsize=10)
 
 # Adicionando a legenda manualmente para o subplot de Clima
 lines, labels = ax1.get_legend_handles_labels()
@@ -67,10 +75,10 @@ ax1.legend(lines, labels, loc='upper left', bbox_to_anchor=(1.05, 1))
 
 # Adicionando a legenda manualmente para o subplot de Família
 lines2, labels2 = ax2.get_legend_handles_labels()
-ax2.legend(lines2, labels2, loc='upper left', bbox_to_anchor=(1.05, 0.83))
+ax2.legend(lines2, labels2, loc='upper left', bbox_to_anchor=(1.05, 0.85))
 
 # Salvando o gráfico como um arquivo PNG
-plt.savefig('TCC - Fig 6  (Clima + Abund2 Log).png', bbox_inches='tight', dpi=2048) 
+plt.savefig('TCC - Fig 6  (Clima + Abund2 Log).png', bbox_inches='tight', dpi=256) 
 
 # Exibindo o gráfico
 plt.show()

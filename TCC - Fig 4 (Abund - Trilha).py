@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import ScalarFormatter
 
 # Read CSV file and sort data alphabetically by "name-id" column
-csv_path = 'Dados Glei/Abund Trilha.csv'
+csv_path = 'Dados Trilha + Familias\Abund Trilha.csv'
 data = pd.read_csv(csv_path, encoding='ISO-8859-1')
 
 df = pd.DataFrame(data)
@@ -41,7 +41,7 @@ for p in ax.patches:
                     ha='center', va='center', xytext=(0, 5), textcoords='offset points')
 
 # Save plot to file
-#plt.savefig('TCC - Fig 4 (Abund - Trilha).png', bbox_inches='tight', dpi=2048)
+plt.savefig('TCC - Fig 4 (Abund - Trilha).png', bbox_inches='tight', dpi=256)
 
 # Show plot
 plt.show()
